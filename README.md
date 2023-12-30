@@ -1,6 +1,10 @@
-# This project contains a responsive UI for an e-commerce application you can use for a the front-end.
+# E-commerce App Project
 
+## Technology Stacks Used
 
-## …Download to your IDE and enjoy!
+` HTML5, CSS3, Javascript `
 
+## Description
+
+*This project is an ecommerce application for a front-end interface. It was built to be responsive to all screen sizes using CSS media query. Some of the basic technologies used are CSS flex models, CSS animation, CSS Relative/Absolute properties, Javacript logic code to handle the slide navigation bar for mobile view, etc...*
 
