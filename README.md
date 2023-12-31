@@ -9,7 +9,9 @@
 
 ## Project List
 
-*  [E-commerce App](https://github.com/olanrewajudavid/projects/tree/main/EcommerceApp)
+*  [E-commerce App](http://ecomapp-ui.laurelanalytiq.com)
 
 * E-profile App
+
+* Library App
 
