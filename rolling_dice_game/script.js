@@ -22,5 +22,4 @@ function rollDice() {
     } else if ( computerRoll > humanRoll) {
         winnerDisplay.textContent = "Computer Win"
     } else {winnerDisplay.textContent = "It's a tie"}
-
 }

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Guessing Game v2</title>
+
+<style>
+
+body {
+
+  transition: background-color 1s ease;
+
+}
+
+
+
+.win-theme {
+
+  background-color: lightgreen;
+
+  color: darkgreen;
+
+}
+
+
+
+.lose-theme {
+
+  background-color: darkred;
+
+  color: white;
+
+}
+
+
+
+#gameMaster {
+
+  display: none;
+  position: relative;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <img id="gameMaster" src="game_master.jpg">
+
+  <button onclick="newGame()">New Game</button>
+
+
+
+  <script>
+
+    function newGame() {
+
+      let user = {};
+
+      //document.getElementById("gameMaster").style.display = "block";
+
+
+
+      let name = prompt("What is your name?");
+
+      user.name = name;
+
+      alert(`${name} -- That is a very boring name...`);
+
+
+
+      let age = parseInt(prompt(`${name} -- How old are you?`));
+
+      user.age = age;
+
+
+
+      if (age < 18) {
+
+        alert("Shouldn't you be in school now?");
+
+        document.getElementById("gameMaster").style.display = "none";
+
+        return;
+
+      } else {
+
+        alert("Let's play a game. If you win, you will receive a fabulous prize!");
+
+        alert("We'll both choose a number between 1 and 100.  The number closest to 50 wins!");
+
+        let userGuess = parseInt(prompt("I have my number - what is yours? (Enter a number between 1 and 100)"));
+
+        let gameMasterGuess = Math.floor(Math.random() * 100) + 1;
+
+        whoIsTheWinner(userGuess, gameMasterGuess, name, age);
+
+      }
+
+    }
+
+
+
+    function whoIsTheWinner(userGuess, gameMasterGuess, name, age) {
+
+      let userDiff = Math.abs(50 - userGuess);
+
+      let gameMasterDiff = Math.abs(50 - gameMasterGuess);
+
+
+
+      if (userDiff < gameMasterDiff) {
+
+        alert(`You win, ${name}!`);
+
+        alert(`As to your prize, ${name} - Honestly by the sweet age of ${age} - you should know better than to believe everything everyone tells you!`);
+
+        document.body.classList.add("win-theme");
+
+      } else if (gameMasterDiff < userDiff) {
+
+        alert("I win!  Better luck next time.");
+
+        document.body.classList.add("lose-theme");
+
+      } else {
+
+        alert("It's a tie!");
+
+      }
+
+      document.getElementById("gameMaster").style.display = "none";
+
+    }
+
+  </script>
+
+</body>
+
+</html>
+

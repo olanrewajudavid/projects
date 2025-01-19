@@ -22,3 +22,11 @@ body {
     font-size: 30px;
     color: aliceblue;
 }
+
+.results {
+    height: 150px;
+    width: 200px;
+    padding: 20px;
+    font-size: 18px;
+    background-color: rgb(18, 60, 123);
+}
