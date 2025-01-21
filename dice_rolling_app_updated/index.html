@@ -1,0 +1,32 @@
+<html>
+<head>
+   <title>dice roll game</title>
+   <style>
+       img {
+           width:32px;
+       }
+   </style>
+</head>
+<body>
+   <h1>Welcome to the Dice Rolling Game!</h1>
+
+
+   <button id="rollButton"> Roll Dice! </button>
+   <button id="showHistoryButton"> Show History </button>
+
+
+   <div id="results">
+       <p> Your role: <span id="humanRoll">-</span></p>
+       <img src="" id="human-dice-image"/>
+       <p> Computer's role: <span id="computerRoll">-</span></p>
+       <img src="" id="computer-dice-image"/>
+       <p id="winner">-</p>
+   </div>
+
+
+   <div id="history-container">
+       <!-- TODO: use javascript to add items to this list -->
+   </div>
+   <script src="casino.js"></script>
+</body>
+</html>
