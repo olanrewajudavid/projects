@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music Library</title>
+<style>
+  #songList {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  .song-data {
+    font-family: monospace; /* Use a fixed-width font for alignment */
+  }
+</style>
+</head>
+<body>
+
+<h1>Music Library</h1>
+
+<input type="text" id="songTitle" placeholder="Song Title">
+<input type="text" id="artist" placeholder="Artist">
+<input type="text" id="genre" placeholder="Genre">
+<input type="text" id="year" placeholder="Year">
+<button onclick="addSong()">Add Song</button>
+
+<h2>All Songs</h2>
+<ul id="songList"></ul>
+
+
+<script src="script.js"></script>
+</body>
+</html>
